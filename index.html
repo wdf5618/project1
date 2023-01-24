@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Personal Portfolio Websire Using HTML, CSS and JavaScript</title>
+    <!-- icon  -->
+    <link rel="shortcut icon" href="./assest/images/profile-2.jpg" type="image/jpg" sizes="16x16" />
+        
+    <!-- fontawesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- swiper css1 js1  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+</head>
+<body>
+
+    <!-- Start Navbar  -->
+    <nav>
+        <div class="container">
+            <a href="#"><h3>Omega</h3></a>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Let's Talk</a></li>
+            </ul>
+
+            <button type="button" id="menu-btn" class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <button type="button" id="close-btn" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+    </nav>
+    <!-- End Navbar  -->
+
+
+    <!-- Start Banner  -->
+    <section class="landing">
+        <div class="container">
+            <div class="socials">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.dribble.com" target="_blank"><i class="fa-solid fa-basketball"></i></a>
+                <a href="https://www.github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            
+            <div class="info">
+                <h1>UI/UX "Design & Fullstack Web Developer</h1>
+                <h3>hi, I'm Roi Omega</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum delectus aperiam assumenda veniam, obcaecati unde corporis eligendi iusto molestias blanditiis veritatis voluptatem? Saepe, animi architecto?</p>
+            </div>
+
+            <div class="profile-area">
+                <div class="outer-circle">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <i class="fa-solid fa-server"></i>
+                    <i class="fa-solid fa-code"></i>
+                    <i class="fa-solid fa-gears"></i>
+            </div>
+
+                <div class="inner-circle">
+                    <img src="./assest/images/profile-2.jpg" alt="profile2" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner  -->
+
+
+    <!-- Start About Section  -->
+    <section id="about" class="about">
+        <h1>About</h1>
+        <div class="container">
+            <div class="image">
+                <img src="./assest/images/profile-2.jpg" alt="profile2" />
+            </div>
+            <div class="info">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque iste omnis beatae nemo odit nulla porro nobis earum, officia facere dignissimos architecto aliquam distinctio similique temporibus unde harum debitis inventore aspernatur fugiat! Aperiam fuga repellat commodi rerum, ullam dignissimos architecto sint esse ut alias nostrum, obcaecati culpa, sunt dicta recusandae. Sequi minima ratione quam itaque ullam temporibus? Minima illum maxime molestiae qui fuga voluptas cum nesciunt ipsum sapiente, nam, suscipit porro impedit assumenda soluta velit omnis, recusandae sed nulla?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam itaque iste omnis beatae nemo odit nulla porro nobis earum, officia facere dignissimos architecto aliquam distinctio similique temporibus unde harum debitis inventore aspernatur fugiat! Aperiam fuga repellat commodi rerum, ullam dignissimos architecto sint esse ut alias nostrum, obcaecati culpa, sunt dicta recusandae. Sequi minima ratione quam itaque ullam temporibus? Minima illum maxime molestiae qui fuga voluptas cum nesciunt ipsum sapiente, nam, suscipit porro impedit assumenda soluta velit omnis, recusandae sed nulla?
+                </p>               
+
+                <div class="read-more-content">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi qui tenetur dolorum nesciunt aut expedita, saepe a nulla iure consequatur possimus accusamus explicabo blanditiis perferendis quasi fugit pariatur! Nulla rem quisquam nihil dolorum explicabo? Atque rem necessitatibus tenetur porro blanditiis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi similique quis distinctio voluptatibus consectetur a quos accusantium enim odit, cum, sed praesentium tempore veritatis. Excepturi dolor molestias aliquam incidunt eum sequi tempora mollitia quasi autem sint ut voluptas soluta pariatur repudiandae recusandae dignissimos, assumenda neque sunt cupiditate iure illum? Ullam et accusamus ipsa odit commodi. Pariatur eligendi reprehenderit architecto quidem!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum iusto eum doloremque alias voluptatibus adipisci assumenda. In cupiditate optio tenetur? Repellat provident dolores hic, blanditiis illo, culpa magni consequatur tempora perspiciatis laboriosam, asperiores eum? Eius accusamus corporis hic qui distinctio.
+                    </p>
+                </div>
+
+                <a class="read-more">Show more</a>
+                <a href="./assest/images/feed-2.jpg" class="btn btn-primary" download><i class="fa-solid fa-down"></i>Download CV</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- End About Section  -->
+
+
+    <!-- Start Skills Section  -->
+    <section id="skills" class="skills">
+        <div class="container">
+
+            <!-- start skill  -->
+            <div class="skill">
+                
+                <div class="head">
+                    <div class="left">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                        <h4>UI/UX Design</h4>
+                    </div>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+                <!-- start items  -->
+                <div class="items">
+
+                    <div class="item">
+                        <h5>Figma</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>92%</h5>
+                        </div>
+                    </div>
+                
+                    <div class="item">
+                        <h5>Adobe XD</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>88%</h5>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h5>Adobe After Effect</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>75%</h5>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end of items  -->
+
+            </div>
+            <!-- end skill  -->
+
+            <!-- start skill  -->
+            <div class="skill">
+                
+                <div class="head">
+                    <div class="left">
+                        <i class="fa-solid fa-code"></i>
+                        <h4>Frontend Development</h4>
+                    </div>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+                <!-- start items  -->
+                <div class="items">
+
+                    <div class="item">
+                        <h5>Figma</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>92%</h5>
+                        </div>
+                    </div>
+                
+                    <div class="item">
+                        <h5>Adobe XD</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>88%</h5>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h5>Adobe After Effect</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>75%</h5>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end of items  -->
+
+            </div>
+            <!-- end skill  -->
+
+            <!-- start skill  -->
+            <div class="skill">
+                
+                <div class="head">
+                    <div class="left">
+                        <i class="fa-solid fa-server"></i>
+                        <h4>Backend Development</h4>
+                    </div>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+                <!-- start items  -->
+                <div class="items">
+
+                    <div class="item">
+                        <h5>Figma</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>92%</h5>
+                        </div>
+                    </div>
+                
+                    <div class="item">
+                        <h5>Adobe XD</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>88%</h5>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h5>Adobe After Effect</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>75%</h5>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end of items  -->
+
+            </div>
+            <!-- end skill  -->
+
+            <!-- start skill  -->
+            <div class="skill">
+                
+                <div class="head">
+                    <div class="left">
+                        <i class="fa-solid fa-gears"></i>
+                        <h4>CMS</h4>
+                    </div>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+                <!-- start items  -->
+                <div class="items">
+
+                    <div class="item">
+                        <h5>Figma</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>92%</h5>
+                        </div>
+                    </div>
+                
+                    <div class="item">
+                        <h5>Adobe XD</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>88%</h5>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <h5>Adobe After Effect</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <h5>75%</h5>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- end of items  -->
+
+            </div>
+            <!-- end skill  -->
+
+        </div>
+    </section>
+    <!-- End Skills Section  -->
+
+
+    <!-- Start Services Section  -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="service">
+                <i class="fa-solid fa-pen-ruler fa-2x"></i>
+                <h3>UI/UX Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore repellendus quam odit ad expedita a reprehenderit aliquid corporis est numquam. Commodi dolor vero esse blanditiis perferendis aliquam nobis rem distinctio?</p>
+            </div>
+
+            <div class="service">
+                <i class="fa-solid fa-globe fa-2x"></i>
+                <h3>Websites & Web apps Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore repellendus quam odit ad expedita a reprehenderit aliquid corporis est numquam. Commodi dolor vero esse blanditiis perferendis aliquam nobis rem distinctio?</p>
+            </div>
+
+            <div class="service">                   
+                <i class="fa-solid fa-laptop-code fa-2x"></i>
+                <h3>Mobile Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore repellendus quam odit ad expedita a reprehenderit aliquid corporis est numquam. Commodi dolor vero esse blanditiis perferendis aliquam nobis rem distinctio?</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Services Section  -->
+
+
+    <!-- Start Portfolio Section  -->
+    <section id="portfolio" class="recent-work">
+        <div class="container">
+            <h4>My Recent Work</h4>
+            <h1 class="text-capitalize">Here Are Some Of My Most Recent Solo Projects</h1>
+
+            <div class="projects">
+                <div class="project">
+                    <div class="thubmnail">
+                        <img src="./assest/images/work (1).jpeg" alt="work1">
+                    </div>
+                    <h2 class="text-capitalize">complete responsive e-commerce website with stripe checkout</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas maiores consequatur laboriosam soluta libero ab totam, distinctio, repudiandae tempora quasi, officia possimus assumenda similique architecto illo maxime? Accusamus, voluptas illum?</p>
+                    <div class="action">
+                        <a href="https://github.com" target="_blank">Github</a>
+                        <a href="https://egatortutorials.com" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+            <!-- </div> -->
+
+            <!-- <div class="projects"> -->
+                <div class="project">
+                    <div class="thubmnail">
+                        <img src="./assest/images/work (2).jpeg" alt="work2">
+                    </div>
+                    <h2 class="text-capitalize">Crypto Mining App</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas maiores consequatur laboriosam soluta libero ab totam, distinctio, repudiandae tempora quasi, officia possimus assumenda similique architecto illo maxime? Accusamus, voluptas illum?</p>
+                    <div class="action">
+                        <a href="https://github.com" target="_blank">Github</a>
+                        <a href="https://egatortutorials.com" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+            <!-- </div> -->
+ 
+            <!-- <div class="projects"> -->
+                <div class="project">
+                    <div class="thubmnail">
+                        <img src="./assest/images/work (3).jpeg" alt="work3">
+                    </div>
+                    <h2 class="text-capitalize">AItcoin Exchange & Investment Website</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas maiores consequatur laboriosam soluta libero ab totam, distinctio, repudiandae tempora quasi, officia possimus assumenda similique architecto illo maxime? Accusamus, voluptas illum?</p>
+                    <div class="action">
+                        <a href="https://github.com" target="_blank">Github</a>
+                        <a href="https://egatortutorials.com" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+            <!-- </div> -->
+
+            <!-- <div class="projects"> -->
+                <div class="project">
+                    <div class="thubmnail">
+                        <img src="./assest/images/work (5).jpeg" alt="work5">
+                    </div>
+                    <h2 class="text-capitalize">Web Hostion service website</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas maiores consequatur laboriosam soluta libero ab totam, distinctio, repudiandae tempora quasi, officia possimus assumenda similique architecto illo maxime? Accusamus, voluptas illum?</p>
+                    <div class="action">
+                        <a href="https://github.com" target="_blank">Github</a>
+                        <a href="https://egatortutorials.com" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Portfolio Section  -->
+
+
+    <!-- Start Testimonials Section  -->
+    <section class="testimonials">
+        <h1>Testimonials</h1>
+        <div class="container swiper">
+            <div class="carousel swiper-wrapper">
+
+                <!-- start testimonial  -->
+                <div class="testimonial swiper-slide">
+
+                    <div class="head">
+
+                        <div class="profile-area">
+                            <div class="avatar">
+                                <img src="./assest/images/profile-1.jpg" alt="avatar">
+                            </div>
+                            <div class="info">
+                                <h4>Diana Ayi</h4>
+                                <small>Civil Engineer (soviel.com)</small>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam sit officiis ut quae nobis sint natus similique quo tempora dolorem!
+                    </p>
+                </div>
+                <!-- end testimonial  -->
+
+                <!-- start testimonial  -->
+                <div class="testimonial swiper-slide">
+
+                    <div class="head">
+
+                        <div class="profile-area">
+                            <div class="avatar">
+                                <img src="./assest/images/profile-5.jpg" alt="avatar">
+                            </div>
+                            <div class="info">
+                                <h4>Barlowe Blinks</h4>
+                                <small>CTO (ska.org)</small>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam sit officiis ut quae nobis sint natus similique quo tempora dolorem!
+                    </p>
+                </div>
+                <!-- end testimonial  -->
+
+                <!-- start testimonial  -->
+                <div class="testimonial swiper-slide">
+
+                    <div class="head">
+
+                        <div class="profile-area">
+                            <div class="avatar">
+                                <img src="./assest/images/profile-3.jpg" alt="avatar">
+                            </div>
+                            <div class="info">
+                                <h4>Bob Goodwin</h4>
+                                <small>Fouder (soeney.com)</small>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam sit officiis ut quae nobis sint natus similique quo tempora dolorem!
+                    </p>
+                </div>
+                <!-- end testimonial  -->
+
+                <!-- start testimonial  -->
+                <div class="testimonial swiper-slide">
+
+                    <div class="head">
+
+                        <div class="profile-area">
+                            <div class="avatar">
+                                <img src="./assest/images/profile-4.jpg" alt="avatar">
+                            </div>
+                            <div class="info">
+                                <h4>Daniella Vinyo</h4>
+                                <small>Student (KNUST)</small>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam sit officiis ut quae nobis sint natus similique quo tempora dolorem!
+                    </p>
+                </div>
+                <!-- end testimonial  -->
+
+            </div>
+
+            <!-- <div class="swiper-pagination"></div> -->
+            <div class="swiper-scrollbar">
+                <div class="swiper-scrollbar-drag"></div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End Testimonials Section  -->
+
+
+    <!-- Start Contact Section  -->
+    <section id="contact" class="contact">
+        <div class="overlay">
+            <div class="container">
+                <h1>Let's Talk</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum pariatur saepe blanditiis!</p>
+                <form action="https://formspree.io/f/xnqynkvz" method="post">
+                    <input type="text" name="name" id="" class="" placeholder="Name" required />
+                    <input type="email" name="emaile" id="" class="" placeholder="Email" required />
+                    <input type="text" name="|subject" id="" class="" placeholder="Subject" required />
+                    <textarea name="message" id="" class="" placeholder="Message" required></textarea>
+                    <input type="submit" value="Submit" class="btn btn-primary" />
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section  -->
+
+
+    <!-- Start Footer Section  -->
+    <footer>
+        <div class="container">
+            <a href="#"><h3>Omega</h3></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Let's Talk</a></li>
+            </ul>
+            <div class="socials">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.dribble.com" target="_blank"><i class="fa-solid fa-basketball"></i></a>
+                <a href="https://www.github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <div class="copyright">
+            copyright &copy; EGATOR Youtube Tutorials
+        </div>
+    </footer>
+    <!-- End Footer Section  -->
+
+
+
+
+<!-- bootstrap css1 js2  -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+<!-- swiper css1 js1  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- custom js  -->
+<script src="./js/app.js" type="text/javascript"></script>
+</body>
+</html>
