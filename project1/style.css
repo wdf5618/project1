@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+*{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary: blue;
+    --secondary: #999;
+    --danger: red;
+    --success: green;
+    --warning: orange;
+    --info: lightblue;
+    --dark: #000;
+    --light: #fff;
+    --transparent: transparent;
+}
+
+.main-color{
+    color: var(--warning);
+}
+input:focus,
+.btn:focus{
+    outline: none;
+}
+
+a{
+    color: var(--light);
+}
+
+.w-100{
+    width: 100%;
+}
+
+.h-100{
+    height: 100vh;
+}
+
+.h-40{
+    height: 40vh;
+}
+
+.mt-3{
+    margin-top: 3rem;
+}
+
+.my-4{
+    margin: 4rem 0;
+}
+
+.my-2{
+    margin: 20px 0;
+}
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: var(--dark);
+    color: var(--light);
+}
+
+.center{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-center{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.container{
+    width: 70vw;
+    
+    margin: 0 auto;
+}
+
+.title-container{
+    max-width: 400px;
+    text-align: center;
+
+    flex-direction: column;
+
+    margin: 2rem 0;
+}
+
+.title{
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    margin: 20px 0;
+}
+
+.small{
+    color: var(--secondary);
+}
+
+.small:hover{
+    color: var(--light);
+}
+
+.btn{
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background: var(--warning);
+    border: none;
+    border-radius: 50px;
+    color: var(--light);
+    padding: 15px 30px;
+}
+
+.services, .experience, .testimonials{
+    flex-direction: column;
+}
+
+
+
+/* Start Header  */
+.header{
+    background: url('../../img/pexels-jacob-colvin-1761279.jpg') no-repeat center center / cover;
+}
+
+/* start navbar  */
+.navbar{
+    justify-content: space-around;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar-brand{
+    margin: 20px;
+}
+
+.navbar-brand h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.navbar-toggler{
+    background: transparent;
+    border: none;
+
+    position: absolute;
+    top: 50%;
+    right: 20px;
+
+    transform: translateY(-50%);
+
+    display: none;
+}
+
+.navbar-toggler .line{
+    width: 30px;
+    height: 5px;
+    background-color: var(--light);
+
+    margin: 5px;
+}
+
+.navbar-toggler.toggle .line:nth-child(2){
+    display: none;
+}
+
+.navbar-toggler.toggle .line:nth-child(1){
+    transform: translate(0px, 5px) rotate(45deg);
+}
+
+.navbar-toggler.toggle .line:nth-child(3){
+    transform: translate(0px, -5px) rotate(-45deg);
+}
+
+.nav-item{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 20px;
+
+    position: relative;
+}
+
+.nav-item::before{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: var(--warning);
+    border-radius: 10px;
+    
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+
+    transition: all 0.5s;
+}
+
+.nav-item:hover::before{
+    width: 100%;
+}
+/* end navbar  */
+
+/* start banner  */
+.banner{
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    text-align: center;
+}
+
+.banner .title{
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+
+.banner .small{
+    letter-spacing: 3px;
+}
+/* end banner  */
+/* End Header  */
+
+
+/* Start Servics Section  */
+.services .row{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.services .caption{
+    text-align: center;
+}
+/* End Services Section  */
+
+
+/* Start Experience Section  */
+.experience{
+    box-shadow: 0px 0px 5px var(--light);
+}
+
+.experience .small li{
+    margin: 0 20px;
+}
+
+.experience .container{
+    margin: 3rem 0;
+}
+
+.experience .grid-center .card,
+.experience .grid-center .card img{
+    width: 100%;
+}
+/* End Experience Section  */
+
+/* Start Skills Section  */
+.skills .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+    align-items: center;
+}
+
+.skill-text{
+    text-align: justify;
+}
+
+.skill-text .title{
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+
+    margin-bottom: 2rem;
+}
+
+.skill-container{
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.skill{
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.skill .center{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.skill .progress-container{
+    width: 100%;
+    height: 10px;
+    background: var(--light);
+    border: none;
+    border-radius: 20px;
+}
+
+.skill .progress-container .progress{
+    width: 85%;
+    height: 100%;
+    background: var(--warning);
+    border: none;
+    border-radius: 20px;
+}
+
+.skill:nth-child(2) .progress-container .progress{
+    width: 60%;
+}
+
+.skill:nth-child(3) .progress-container .progress{
+    width: 70%;
+}
+
+.skill:nth-child(4) .progress-container .progress{
+    width: 40%;
+}
+
+/* End Skills Section  */
+
+/* Start Ads Section  */
+.ads{
+    background: url('../../img/pexels-porapak-apichodilok-346882.jpg') no-repeat bottom center / cover;
+}
+
+.ads .center{
+    width: 100%;
+    backdrop-filter: blur(3px);
+    justify-content: space-around;
+    padding: 4rem 0;
+}
+
+.ads .btn{
+    min-width: max-content;
+}
+/* End Ads Section  */
+
+/* Start Testimonials Section  */
+.testimonials .center{
+    justify-content: space-between;
+}
+
+.testimonials .review .profile{
+    margin: 0px 30px;
+}
+
+.testimonials .review{
+    margin: 0 10px;
+}
+
+.testimonials .review .profile img{
+    width: 80px;
+    border-radius: 50%;
+}
+
+.testimonials .review .small{
+    font-size: 1.1rem;
+    word-spacing: 3px;
+    text-align: justify;
+}
+/* End Testimonials Section  */
+
+/* Start Content Section  */
+.contact{
+    margin: 5rem 0;
+}
+.contact .contact-infos{
+    text-align: center;
+}
+
+.contact .contact-infos p{
+    margin: 10px 0;
+    color: var(--secondary);
+}
+/* End Content Section  */
+
+
+/* Start Footer Section  */
+.footer{
+    border-top: 1px solid var(--light);
+}
+.footer .center{
+    justify-content: space-around;
+    padding: 1rem 0;    
+}
+
+.footer .center .small{
+    margin: 0 20px;
+}
+
+.footer .center .small:hover{
+    color: var(--warning);
+}
+/* End Footer Section  */
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 920px) {
+    .navbar-collapse{
+        display: none;
+    }
+
+    .navbar-toggler{
+        display: block;
+    }
+
+    .navbar-toggler.toggle + .navbar-collapse{
+        width: 100%;
+        display: block;
+        background: linear-gradient(
+            45deg,
+            tomato 50%,
+            transparent 50%
+        );
+        /* border: 1px solid tomato; */
+        backdrop-filter: blur(5px);
+
+        position: absolute;
+        top: 100%;
+
+        animation: menuani 0.5s linear ;
+
+        
+    }
+
+    .navbar-nav{
+        flex-direction: column;
+        align-items: start;
+
+        margin-left: 10%;
+    }
+
+    .nav-item{
+        margin: 1rem 0;
+    }
+
+    /* Start Services Section  */
+    .services .row{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Start Experience Section */
+    .experience .nav-item{
+        margin: 0 20px;
+    }
+
+    .experience .grid-center{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Start Skills Section  */
+    .skills .container{
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    /* Start Ads Section  */
+    .ads .center{
+        padding: 4rem 20px;
+    }
+
+    /* Strat Testmonials Section  */
+    .testimonials .center{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonials .center .review{
+        margin-bottom: 2rem;
+    }
+
+    /* Start Contact Section  */
+    .contact{
+        border: none;
+    }
+
+    .contact .grid-center{
+        grid-template-columns: 1fr;
+    }
+
+    .contact .contact-infos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+        margin: 1rem 0;
+    }
+    
+    .contact .contact-infos div i{
+        font-size: 4rem;
+    }
+
+    @keyframes menuani {
+        from{
+            left: -100%;
+        }
+        to{
+            left: 0;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .btn{
+        font-size: 1.2rem;
+    }
+
+    .banner .title{
+        font-size: 1.5rem;
+    }
+
+    /* Start Ads Section  */
+    .ads .title{
+        font-size: 1rem;
+    }
+
+    /* Start Footer Section  */
+    .footer .center .small{
+        font-size: 10px;
+        margin: 5px;
+    }
+
+    
+}
